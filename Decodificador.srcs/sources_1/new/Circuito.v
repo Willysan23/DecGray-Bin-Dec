@@ -25,8 +25,6 @@ module Circuito(
     input B,
     input C,
     input D,
-    
-Viva saprissa
 
     output W,
     output Y,
