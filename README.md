@@ -51,7 +51,11 @@ En síntesis el subsistema realiza los siguientes pasos:
 
 __2. Subsistema de despliegue de código ingresado traducido a formato binario en luces LED__
 
-<p>Este subsistema toma los datos en código binario y los despliega en cuatro luces LED, se refresca al menos cada 500ms</p>
+<p>Este subsistema toma los datos en código binario y los despliega en cuatro luces LED, se refresca al menos cada 500ms.</p>
+
+1. Se asignan 4 salidas.
+2. Se representa la salida de cada bit con un LED.
+3. Se envían los datos a la FPGA.
 
 
 
