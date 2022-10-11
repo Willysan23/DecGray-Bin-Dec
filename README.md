@@ -33,6 +33,8 @@ Código decimal | Código binario de 4 bits | Código Gray de 4 bits
 14  | 1110| 1001
 15  | 1111 | 1000
 
+<br/>
+
 __1. Subsistema y decodificación de código Gray__
 
 <p>Este subsistema obtiene un código binario a partir de cuatro conmutadores. La entrada del código es capturada y sincronizada con el sistema principal. Este subsitema traduce la entrada capturada a un código de Gray antes de enviarlo al siguiente subsistema.</p>
@@ -53,12 +55,13 @@ __2. Subsistema de despliegue de código ingresado traducido a formato binario e
 
 <br>
 
-__3. Subsistema de desplieque de código ingresado y deodificado en display de 7 segmentos__
+__3. Subsistema de desplieque de código ingresado y decodificado en display de 7 segmentos__
 
 <p>Este subsistema toma los datos en código binario y los depliega en un display de siete segmentos, de forma decimal. Cuenta con una tasa de refresco adecuada.</p>
 
 # Diagrama de bloques de cada subsistema #
 
+![Diagrama de bloques de cada subsistema](/images/diagrama.png)
 # Diagrama de estado de las FSM #
 
 # Ejemplo y análisis de simulación funcional del sistema #
