@@ -2,10 +2,7 @@ CIRCUITO DECODIFICADOR DE GRAY <a color="green" name="TOP"></a>
 ===================
 
 <h4>Realizado por:</h4>
-<p>-William Sánchez</p>
-<p>-Johanel Álvarez</p>
-<p>-Fabián Chacón </p>
-
+<p>-William Sánchez <br> -Johanel Álvarez <br> -Fabián Chacón </p>
 
 # Descripción de funcionamiento y subsistemas #
 
