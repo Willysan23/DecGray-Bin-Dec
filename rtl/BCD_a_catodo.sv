@@ -11,28 +11,40 @@ always@ (digito)
 begin 
     case(digito)
     
-    4'd0:
-        catodo = 8'b11000000; // cero
-    4'd1:
-        catodo = 8'b11111001; // uno 
-    4'd2:
-        catodo = 8'b10100100; // dos
-    4'd3:
-        catodo = 8'b10110000; // tres  
-    4'd4:
-        catodo = 8'b10110001; // cuatro 
-    4'd5:
-        catodo = 8'b10010010; // cinco
-    4'd6:
-        catodo = 8'b10000010; // seis 
-    4'd7:
-        catodo = 8'b11111000; // siente                
-    4'd8:
-        catodo = 8'b10000000; // ocho       
-    4'd9:
-        catodo = 8'b10010000; // nueve 
+    4'b0000:
+        catodo = 7'b0000001; // cero solo sale 0
+    4'b0001:
+        catodo = 7'b0000001; // uno  solo sale 0
+    4'b0011:
+        catodo = 7'b0000001; // dos solo sale 0
+    4'b0010:
+        catodo = 7'b0000001; // tres solo sale 0
+    4'b0110:
+        catodo = 7'b0000001; // cuatro solo sale 0
+    4'b0111:
+        catodo = 7'b0000001; // cinco solo sale 0
+    4'b0101:
+        catodo = 7'b0000001; // seis solo sale 0
+    4'b0100:
+        catodo = 7'b0000001; // siente solo sale 0            
+    4'b1100:
+        catodo = 7'b0000001; // ocho solo sale 0
+    4'b1101:
+        catodo = 7'b0000001; // nueve solo sale 0 
+    4'b1111:
+        catodo = 7'b1001111; //diez solo sale 1
+    4'b1110:
+        catodo = 7'b1001111; //once solo sale 1
+    4'b1010:
+        catodo = 7'b1001111; //doce solo sale 1
+    4'b1011:
+        catodo = 7'b1001111; //trece solo sale 1 
+    4'b1001:
+        catodo = 7'b1001111; //catorce solo sale 1 
+    4'b1000:
+        catodo = 7'b1001111; //quince  solo sale 1
     default:
-        catodo = 8'b11000000; // default               
+        catodo = 7'b0000001; // default               
 
     endcase
 end            

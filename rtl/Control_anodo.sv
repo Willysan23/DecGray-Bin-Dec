@@ -16,6 +16,10 @@ begin
             anodo = 4'b1110; // 1 encedido - derecha
         2'b01:
             anodo = 4'b1101; // 2 encendido 
+        2'b00:
+            anodo = 4'b1111; // 3 encedido - derecha
+        2'b01:
+            anodo = 4'b1111; // 4 encendido 
 
           endcase
 end 

@@ -13,11 +13,11 @@ always@(refrescamiento)
             2'd0:
                 DIGITO = digito; // valor en la posicion 1 - derecha
             2'd1:
-                DIGITO = digito2; // valor en la posicion 2
+                DIGITO = digito; // valor en la posicion 2
             2'd2:
-                DIGITO = digito3; // valor en la posicion 3
+                DIGITO = 4'b1111; // valor en la posicion 3
             2'd3:
-                DIGITO = digito4; // valor en la posicion 4 - izquierda 
+                DIGITO = 4'b1111; // valor en la posicion 4 - izquierda 
                 
                 
           endcase
