@@ -63,6 +63,9 @@ __3. Subsistema de desplieque de código ingresado y decodificado en display de 
 
 # Diagrama de bloques de cada subsistema #
 
+
+<br/>
+
 ![Diagrama de bloques de cada subsistema](/images/diagrama.png)
 # Diagrama de estado de las FSM #
 
