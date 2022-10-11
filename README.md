@@ -12,6 +12,8 @@ CIRCUITO DECODIFICADOR DE GRAY <a color="green" name="TOP"></a>
 2. Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
 3. Subsistema de desplieque de código ingresado y deodificado en display de 7 segmentos.
 
+<br/>
+
 <p>Los valores decimales, binarios y de Gray a trabajar fueron los siguientes:</p>
 
 Código decimal | Código binario de 4 bits | Código Gray de 4 bits
