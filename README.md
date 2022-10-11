@@ -15,6 +15,27 @@ CIRCUITO DECODIFICADOR DE GRAY <a color="green" name="TOP"></a>
 2. Subsistema de despliegue de código ingresado traducido a formato binario en luces LED.
 3. Subsistema de desplieque de código ingresado y deodificado en display de 7 segmentos.
 
+<p>Los valores decimales, binarios y de Gray a trabajar fueron los siguientes:</p>
+
+Código decimal | Código binario de 4 bits | Código Gray de 4 bits
+| :---: | :---: | :---:
+0  | 0000 | 0000
+1  | 0001 | 0001
+2  | 0010 | 0011
+3  | 0011 | 0010
+4  | 0100 | 0110
+5  | 0101 | 0111
+6  | 0110 | 0101
+7  | 0111 | 0100
+8  | 1000| 1100
+9  | 1001 | 1101
+10  | 1010 | 1111
+11  | 1011 | 1110
+12  | 1100 | 1010
+13  | 1101 | 1011
+14  | 1110| 1001
+15  | 1111 | 1000
+
 __1. Subsistema y decodificación de código Gray__
 
 <p>Este subsistema obtiene un código binario a partir de cuatro conmutadores. La entrada del código es capturada y sincronizada con el sistema principal. Este subsitema traduce la entrada capturada a un código de Gray antes de enviarlo al siguiente subsistema.</p>
