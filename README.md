@@ -65,6 +65,10 @@ __3. Subsistema de desplieque de código ingresado y decodificado en display de 
 
 <p>Este subsistema toma los datos en código binario y los depliega en un display de siete segmentos, de forma decimal. Cuenta con una tasa de refresco adecuada.</p>
 
+1. Se asignan 4 salidas.
+2. Se representa la salida de cada bit con un LED.
+3. Se envían los datos a la FPGA.
+
 # Diagrama de bloques de cada subsistema #
 
 
