@@ -4,30 +4,30 @@ module top(
 
 input wire clk, // 100MHZ
 input wire [3:0] switch,
-input wire [3:0] anodo,
+input reg [1:0] reset,
 output wire [6:0] catodo,
-output wire [6:0] catodo_seg
+output wire [3:0] anodo
 
     );
     
 wire refrescamiento_clock;  // entrada de refrescamiento de reloj - refrescamiento de contador
 wire  [1:0] refrescamiento; // refrescamiento de reloj
-wire [3:0] DIGITO;
-wire Z0;
-wire Z1;
-wire Z2;
-wire Z3;
+
+wire [3:0] digito;
 
 // wrapper del refrescamiento
-divisor_clock refrescamiento_top (
+divisor_clock refescamiento_top (
 .clk(clk),
 .divisor(refrescamiento)
 );
 
 
-refrescamiento refrescamiento_inst(
+refescamiento refescamiento_inst(
 .refrescamiento_clock(refrescamiento_clock),
-.refrescamiento(refrescamiento)
+.refrescamiento(refrescamiento),
+.reset(reset)
+
+
 );
 
 control_anodo control_anodo_inst(
@@ -35,25 +35,10 @@ control_anodo control_anodo_inst(
 .anodo(anodo)
 );
 
-
-control_BCD control_BCD_inst(
-
-.digito(switch[3:0]),
-.refrescamiento(refrescamiento),
-.DIGITO(DIGITO)
-
-);
-
-BCD_a_catodo_segundo BCD_a_catodo_segundo_inst (
-.digito(DIGITO),
-.catodo_seg(catodo_seg)
-
-);
-
 BCD_a_catodo BCD_a_catodo_inst (
-.digito(DIGITO),
+.refrescamiento(refrescamiento),
+.digito(digito),
 .catodo(catodo)
-
 );
 
 codigo_gray codigo_gray_inst(
@@ -61,12 +46,7 @@ codigo_gray codigo_gray_inst(
 .A1(switch[1]),
 .A2(switch[2]),
 .A3(switch[3]),
-.Z0(Z0),
-.Z1(Z1),
-.Z2(Z2),
-.Z3(Z3),
-.digito(DIGITO)
-
+.digito(digito)
 );        
 
 

@@ -4,8 +4,8 @@
 
 module refescamiento(
 input refrescamiento_clock,
-input reset,
-output reg [1:0] refrescamiento = 0
+input reg [1:0] reset = 0,
+output reg [1:0] refrescamiento
 
 );
 always@(posedge refrescamiento_clock or posedge reset) 
@@ -17,6 +17,3 @@ always@(posedge refrescamiento_clock or posedge reset)
     end
     
 endmodule
-
-
-
